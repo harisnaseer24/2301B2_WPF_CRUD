@@ -214,11 +214,20 @@ do
 	ans = Convert.ToChar(Console.ReadLine());
 
 } while (ans == 'Y' || ans == 'y');
-*/
+
 
 //Arrays fixed size
 
 //int[] numbers = new int[4];// 4 element will come in this array
+
+
+Console.WriteLine(myNumbers[0]);
+
+
+
+
+
+
 //numbers[0] = 2;
 //numbers[1] = 12;
 //numbers[2] = 22;
@@ -236,5 +245,148 @@ foreach (int num in myNumbers)
 {
 	Console.WriteLine(num);
 }
-
+*/
 //var
+//Console.WriteLine(Math.Pow(2,2));
+
+
+//int[] numbers = new int[4];// C# give default values to uninitialized variables int=0, string = null, bool= true
+
+//Console.WriteLine(numbers);
+
+//string[] cities = { "Karachi", "Lahore", "Rawalpindi", "Sialkot", "Multan","Sialkot","Sialkot", "Sialkot", "Sialkot" };
+//Array.Sort(cities);
+//Array.Reverse(cities);
+
+////Console.WriteLine(Array.IndexOf(cities, "Sialkot"));//0
+////Console.WriteLine(Array.LastIndexOf(cities, "Sialkot"));//1
+
+
+//Console.WriteLine();
+
+
+//for (int i = 0; i < cities.Length; i++)
+//{
+//    Console.WriteLine(cities[i]);
+//}
+
+//Multidimensional Arrays (Array inside an array) 2D, 3D etc...
+//
+//int[,] TopMarks =
+//{   
+//    { 88, 89},
+//    { 92, 98},
+//    { 78, 87},
+//    { 99, 100}
+//};
+// 4 x 2
+
+
+//Console.WriteLine(TopMarks[1,1]);
+
+//for (int i = 0; i < TopMarks.GetLength(0); i++)
+//{
+//        Console.WriteLine($"Printing {i+1} array");
+//    //Console.WriteLine();
+//    for (int j = 0;  j < TopMarks.GetLength(1); j++)
+//    {
+//        Console.WriteLine(TopMarks[i,j]);
+//    }
+//    Console.WriteLine();
+
+//}
+
+//Jagged Array (Sizes of subarrays is not fixed) 2D:
+
+//string[][] skillSet =
+//{
+//    new string[4]{"C#","Sql","Php","Html"},
+//    new string[1]{"php"},
+//    new string[2]{"Css","Java"},
+//    new string[3]{"Javascript","Sql","Php"}
+//};
+
+//bool[] numbers = { true,false };
+
+//Console.WriteLine(skillSet[3][1]);
+
+////var dexides the dataype of variable on runtime
+
+//foreach (var skills in skillSet)
+//{
+//    foreach (var skill in skills)
+//    {
+
+//    Console.WriteLine(skill);
+//    }
+//}
+
+//getJaggedArray(hobbies)
+
+//Functions
+//1. User Defined
+//add();
+//1. No Return no Parameters
+//return type function name () { body }
+//void Greet()
+//{
+//    Console.WriteLine("Hi Haris, Welcome to Our Console.");
+//}
+//Greet();
+
+
+//2. No Return with Parameters
+//void Greet(string name)//Parameter
+//{
+//    Console.WriteLine($"Hi {name}, Welcome to Our Console.");
+//}
+//Greet("Talha");//Arguement
+//Greet("Adnan");//Arguement
+//Greet("Haseeb");//Arguement
+
+
+//3. Return no Parameters
+
+//string Greet()
+//{
+//   return("Hi User, Welcome to Our Console.");
+//}
+
+//Console.WriteLine(Greet());
+
+//string msg = Greet();
+//Console.WriteLine(msg.ToUpper());
+
+
+//float Greet()
+//{
+//    return (0.234f);
+//}
+
+//Console.WriteLine(Greet());
+
+//float msg = Greet();
+//Console.WriteLine(msg);
+
+
+
+//4. Return with Parameters
+
+//string Greet(string name, byte age)
+//{
+//    return ($"Hi {name}, Welcome to Our Console.\n Your age is: {age}");
+//}
+
+//string msg = Greet("Jalal",78);
+//Console.WriteLine(msg.ToUpper());
+
+
+
+//2. Pre Defined
+
+//Math.Sqrt(49),Console.WriteLine(skill);
+
+
+
+//1 . Make 2 jagged arrays.
+//2. Create a function to print them.
