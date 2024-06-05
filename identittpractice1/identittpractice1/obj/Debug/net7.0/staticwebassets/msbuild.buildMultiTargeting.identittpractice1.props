@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\identittpractice1.props" />
+</Project>

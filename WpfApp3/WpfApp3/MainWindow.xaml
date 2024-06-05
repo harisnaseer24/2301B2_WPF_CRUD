@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+          xmlns:menu="clr-namespace:WpfApp3"
+        
+        xmlns:form="clr-namespace:WpfApp3.View.UserControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <!-- Title Bar-->
+
+       <!-- Menu Bar-->
+     
+        <menu:MenuBar/>
+
+        <!-- Content Pane-->
+        <Grid Grid.Row="1">
+            
+       
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            <form:ClearableTextBox Width="400" Height="100" Placeholder="First Name" Grid.Row="0"/>
+            <form:ClearableTextBox Width="400" Height="100" Placeholder="Last Name" Grid.Row="1"/>
+            <form:ClearableTextBox Width="400" Height="100" Placeholder="Email" Grid.Row="2"/>
+            <form:ClearableTextBox Width="400" Height="100" Placeholder="Phone" Grid.Row="3"/>
+            <Button  Grid.Row="5" Content="Register Now" FontSize="20" Width="100" BorderBrush="AliceBlue" Padding="5" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click" Background="HotPink" FontWeight="ExtraBold" Foreground="AliceBlue"/>
+        </Grid>
+
+
+
+    </Grid>
+
+   
+
+</Window>

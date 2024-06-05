@@ -390,3 +390,681 @@ foreach (int num in myNumbers)
 
 //1 . Make 2 jagged arrays.
 //2. Create a function to print them.
+
+//exception handling (try | catch )
+//try
+//{
+//    //Code to execute
+//    int number = Convert.ToInt32(Console.ReadLine());
+//    switch (number)
+//    {
+//        case 1:
+//            Console.WriteLine("Hi");
+//            break;
+//        case 2:
+
+//            Console.WriteLine("Hi , Hi");
+
+//            break;
+//        case 3:
+//            Console.WriteLine("Hi,hello, hi");
+//            break;
+//        case 4:
+//            Console.WriteLine("Hi,hello, hi, hello");
+//            break;
+
+//        default:
+//            Console.WriteLine("bye");
+//            break;
+//    }
+//}
+//catch (DivideByZeroException e)
+//{
+//    //Print a message on exception
+//    Console.WriteLine("Can't Divide by zero");
+
+//}
+//catch (FormatException e)
+//{
+//    //Print a message on exception
+//    Console.WriteLine("Invalid input we want an integer from you."+e);
+//}
+//catch (Exception e)
+//{
+//    //Print a message on exception
+//    Console.WriteLine("Oops, Something went wrong.");
+//}
+//finally
+//{
+//    Console.WriteLine("Thanks for using our console application. Do recommend it to others :)" );
+//}
+
+
+//Collections
+
+//Generics collection
+//fixed Datatype
+//dynamic size
+//List, Dictionary, Stack, Queues
+
+//Non-Generics collection
+// Datatype not fixed
+//dynamic size
+//ArrayList, Hashtable
+
+//using System.Collections;
+//using System.Linq;
+
+//Generics
+//List
+
+//List<string> SuperCars = new List<string>();
+//SuperCars.Add("Ferrari");
+//SuperCars.Add("Lamborghini");
+//SuperCars.Add("Buggati Chiron");
+
+
+//List<string> Cars = new List<string>();
+
+//Cars.Add("Honda civic");
+//Cars.Add("Honda Accord");
+//Cars.Add("Toyota Camry");
+//Cars.Add("toyota Fortuner");
+//Cars.Add("Suzuki Cultus");
+//Cars.Add("Toyota vitz");
+
+////Cars.Remove("Toyota vitz");
+////Cars.RemoveAt(3
+////
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+//Cars.Insert(1, "Toyota Revo");
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+
+//Cars.AddRange(SuperCars);
+
+////Cars.RemoveRange(0,2);
+
+////Cars.Clear();
+
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+
+
+////Console.WriteLine(Cars[4]);
+//foreach (string car in Cars)
+//{
+//    Console.WriteLine(car);
+//}
+
+
+//Queues  (fifo: first in first out)
+//Queue<string> names = new Queue<string>();
+//names.Enqueue("Haris");
+//names.Enqueue("ahmed");
+//names.Enqueue("ashar");
+//names.Enqueue("rayan");
+//names.Enqueue("yaheya");
+//names.Enqueue("abdullah");
+//names.Enqueue("talha");
+//names.Enqueue("danish");
+//names.Enqueue("sohaib");
+
+
+//names.Dequeue();
+//names.Dequeue();
+//names.Dequeue();
+//names.Dequeue();
+
+//    names.Clear();
+
+//foreach (string item in names)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+
+//Stack (lifo: last in first out)
+
+//Stack<string> SecondRow = new Stack<string>();
+//SecondRow.Push("Aisha");
+//SecondRow.Push("ashbal");
+//SecondRow.Push("mariam");
+//SecondRow.Push("muzammil");
+//SecondRow.Push("basit");
+
+
+
+
+//SecondRow.Pop();
+//SecondRow.Pop();
+//SecondRow.Pop();
+//SecondRow.Pop();
+
+//SecondRow.Clear();
+
+//foreach (string item in SecondRow)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+//using System.Collections;
+//Dictionaries (Generics)
+//Dictionary<string, string> user = new Dictionary<string, string>();
+//user.Add("username","harisnaseer24");
+//user.Add("email","harisnaseer24@gmail.com");
+//user.Add("pass","abcdefghij");
+//user.Add("role","admin");
+//user.Add("image","harisnaseer.jpg");
+
+//Console.WriteLine(user["role"]);
+//user.Remove("image");
+////Console.WriteLine(user["role"]);
+
+//foreach (var item in user)
+//{
+//    string[] test = (item.ToString()).Split(",");
+//    string key = test[0].Trim('[');// [
+//    string value = test[1].Trim(']');// ]
+//    //Console.WriteLine(key);
+//    //Console.WriteLine(value);
+//    Console.WriteLine( $"The property is : {key} and  value is : {value}");
+//    //Console.WriteLine(test[1]);
+//}
+
+//Hashtables (Non generic)(no fixed datatype)
+
+//Hashtable user = new Hashtable();
+//user.Add("username", "harisnaseer24");
+//user.Add("email", "harisnaseer24@gmail.com");
+//user.Add("pass", 54544454544);
+//user.Add("isadmin",true );
+//user.Add(2.45, "harisnaseer.jpg");
+
+//Console.WriteLine(user["isadmin"]);
+//user.Remove("image");
+//user.Contains(2.45);//true
+//user.ContainsValue(true);//true
+
+////Console.WriteLine(user["role"]);
+//foreach (DictionaryEntry item in user)
+//{
+//    Console.WriteLine(item.Key +" : "+ item.Value);
+//}
+//Console.WriteLine(user.GetHashCode());
+
+//ArrayList (Non Generic)(no fixed datatype)
+//ArrayList Cars = new ArrayList();
+
+//Cars.Add("Honda civic");
+//Cars.Add("Honda Accord");
+//Cars.Add("Toyota Camry");
+//Cars.Add("toyota Fortuner");
+//Cars.Add(240900);
+//Cars.Add(.24f);
+
+//Cars.Remove("Toyota vitz");
+//Cars.RemoveAt(3)
+//
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+//Cars.Insert(1, "Toyota Revo");
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+//Cars.RemoveRange(0,2);
+//Cars.Clear();
+//Console.WriteLine(Cars.Contains("Toyota Revo"));
+
+//Console.WriteLine(Cars[4]);
+//foreach (var car in Cars)
+//{
+//    Console.WriteLine(car);
+//}
+
+//String Methods
+
+//string test = """{ "name": "John Doe"}""";
+
+//using System.Collections;
+
+//string test = "we are  Learnnig \"C#\"";
+//Console.WriteLine(test);
+//Console.WriteLine(test.Replace("Learnnig","Mastering"));
+//Console.WriteLine(test.Replace("C#","Java"));
+
+//string email = "hdkjhdkjhkhf";
+//int age = 75;
+
+//login start
+
+//login end
+
+
+//CODING Best Practices
+// Indentation (Readable by using spaces and new lines) 
+// Comments //Sir yahan switch case shuru kia ha
+// Meaningful identifiers (variable names)
+// errors (exception handling) 
+//less repeatation
+
+
+//Objects and Classes
+
+//Aeroplane Boeing707 = new Aeroplane();//default constructor
+
+
+////Boeing707.Name = "Boeing 707";
+////Boeing707.takeOff();
+////Console.WriteLine(Boeing707.AirLine);
+
+//Aeroplane f16 = new Aeroplane("PAF");
+
+
+//Aeroplane f17 = new Aeroplane("PAF","F-17 Thunder",2,2,"8500hp");
+//f17.takeOff();
+//f17.land();
+
+//public class Aeroplane
+//{
+//    public string? AirLine;
+//    public string? Name;
+//    public int Seats;
+//    public int Crew;
+//    public string? Power;
+
+//    //Contstructor
+//    public Aeroplane()
+//    {
+//        this.AirLine = "Not specified";
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//       this.Power = null;
+//    } 
+
+//    public Aeroplane(string AirLine)
+//    {
+//        this.AirLine = AirLine;
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//       this.Power = null;
+//    }
+
+
+//    //Paremeterized constructor (Overloading)
+//    public Aeroplane(string ALine, string name, int seat , int crew, string pow)
+//    {
+//        this.AirLine = ALine;
+//        this.Name = name;
+//        this.Seats = seat;
+//        this.Crew = crew;
+//       this.Power = pow;
+//    }
+//    public void takeOff()
+//    {
+//        Console.WriteLine($"{this.Name} is taking off. Best Wishes..!");
+//    }
+//    public void land()
+//    {
+//        Console.WriteLine($"{this.Name} is Landing at the 4th runway..! ");
+//    }
+
+//}
+
+//OOP (OBJECT ORIENTED PROGRAMMING)
+//it is an approach to code cleaner and better.
+//readable
+//reusable
+//optimize
+//proper structure of the code is maintained.
+
+
+
+//Main Pillars of OOP
+
+//1. Interitance
+// i . Single level inheritance  Vehicle -> Car
+// ii . Multi level inheritance  Vehicle -> Car -> Ecar
+// iii. Heirarchical inheritance Vehicle ->Car , Vehicle-> Bike
+// iv. Multiple inheritance  
+// v. Hybrid inheritance    Vehicle -> CAR , Vehicle -> Car -> Ecar, Car-> Ecar
+
+//2. Polymorphism
+// Method Overloading
+// Method Overriding
+//3. Abstraction
+//4. Encapsulation
+
+
+
+////Inheritance
+//Vehicle abc = new Vehicle("AAZ-789", "Metallic grey");
+//abc.Run();
+
+//Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
+//mercedez.Run();
+//mercedez.Run(300);
+
+//// Parent class | Base Class | Super Class
+//public class Vehicle
+//{
+//    public string regNo;
+//    public string color;
+
+//    public Vehicle(string regno, string color)
+//    {
+//        this.regNo = regno;
+//        this.color = color;
+//    } 
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.regNo} vehicle started running");
+//    }
+//}
+//// Child class | Derived Class | Sub Class
+//public class Car : Vehicle
+//{
+
+//    public string brand;
+//    public string model;
+//    public int price;
+
+//    public Car(string regno, string color, string brand, string model, int price) : base(regno , color)
+//    {
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//    }
+
+//    //method overriding
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+//    }
+//    //method overloading
+//    public void Run(int speed)
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} MPH.");
+//    }
+
+//}
+
+//-- 25/5/24 Abstract class
+
+//Vehicle abc = new Vehicle("AAZ-789", "Metallic grey");
+//abc.Run();
+
+//Car MarkX = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+//Car a = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+//Car b = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+//Car bv = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+//Car g = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+//Car MadrkX = new Car("2008", "Black", "Toyota", "Mark X", 3500000);
+
+
+//MarkX.Run();
+//MarkX.Run(300);
+
+//Math abc = new Math();
+//abc.Sqrt(49);
+
+//static function examples:
+//Math.Sqrt(49);
+//Console.WriteLine("dkf");
+
+//Console.WriteLine(Car.carCount);
+//Car.beginRace();
+
+
+
+//abstract public class Vehicle
+//{
+//    public string regNo;
+//    public string color;
+
+//    public static int totalCars = 0;
+//    public static int totalAmount = 0;
+//    public static int payingCars = 0;
+//    public static int nonPayingCars = 0;
+//    public virtual void Run()
+//    {
+//        Console.WriteLine($"{this.regNo} vehicle started running");
+
+//    }
+//}
+//public class Car : Vehicle
+//{
+//    public string brand;
+//    public string model;
+//    public int price;
+//    public int basePrice = 2;
+//    public static int carCount = 0;
+//    public Car(string regno, string color, string brand, string model, int price)
+//    {
+//        this.regNo = regno;
+//        this.color = color;
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//        totalCars++;
+//        carCount++;
+//    }
+//    public void paytax()
+//    {
+//        Console.WriteLine("Boom..! the race has begun. May the best be winner.");
+//        payingCars++;
+//        totalAmount += this.basePrice;
+
+//    }
+//    //method overriding
+//    public  void passWithoutPaying()
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+//        nonPayingCars++;
+//    }
+
+
+//}
+
+//Interfaces
+//FrontEndDeveloper haris = new FrontEndDeveloper();
+//haris.ComplexDesign("Haris Naseer");
+//haris.SimpleDesign();
+
+//FullStackDeveloper usama = new FullStackDeveloper();
+//usama.SimpleDesign();
+//usama.ComplexAPIs();
+
+//interface topics{
+
+//Interfaces,
+//        Static,
+//       Abstract
+//} 
+//interface FrontEndDevelopment
+//{
+//    public void SimpleDesign();
+//    public void ComplexDesign(string name);
+
+//}
+//interface BackEndDevelopment
+//{
+//    public void SimpleCrud();
+//    public void ComplexAPIs( );
+//    public void Authentication();
+
+//}
+
+//public class FrontEndDeveloper: FrontEndDevelopment
+//{
+//    //method implementation
+//    public void SimpleDesign() {
+//        Console.WriteLine("We will provide you simple and responsive design using HTML, CSS and JS.");
+//    }
+//    public void ComplexDesign(string name) {
+//        Console.WriteLine($"Hi this is {name}, We will provide you animated and responsive design using HTML, CSS, JS, React, Nextjs.");
+//    }
+
+//}
+
+
+
+//Multiple Inheritance
+//public class FullStackDeveloper: FrontEndDevelopment, BackEndDevelopment
+//{
+//    public void SimpleDesign()
+//    {
+//        Console.WriteLine("We will provide you simple and responsive design using HTML, CSS and JS.");
+//    }
+//    public void ComplexDesign(string name)
+//    {
+//        Console.WriteLine($"Hi this is {name}, We will provide you animated and responsive design using HTML, CSS, JS, React, Nextjs.");
+//    }
+//    public void SimpleCrud()
+//    {
+//        Console.WriteLine("We will provide you simple crud operations.");
+//    }
+//    public void ComplexAPIs()
+//    {
+//        Console.WriteLine($"We will provide you complex APIs.");
+//    }
+//    public void Authentication()
+//    {
+//        Console.WriteLine($" We will provide you Authentication.");
+//    }
+//}
+
+//Access  Modifiers
+//1. Public     | anyone can access from any where in the program.
+//2. Private    | only owner class can access .
+//3. Protected  | only owner class and child class can access .
+
+
+//Products neckBand = new Products(1500, "Lenovo Neckband" ,"good quality product with extra base and long range connectivity.");
+////neckBand.name="Lenovo Neckband";
+////neckBand.price;
+////neckBand.description;
+////Console.WriteLine(neckBand.price);
+
+////neckBand.showPrice();
+//neckBand.callShowPrice();
+
+//Gadgets iphone = new Gadgets(230000, "iphone 15 pro max", "acha phone ha", "phones");
+//iphone.ShowGadget();
+
+//public class Products
+//{
+//   public string name;
+//   private int price;
+//   protected string description;
+
+//    public Products(int price, string name, string description)
+//    {
+//        this.name = name;
+//        this.price = price;
+//        this.description = description;
+//    }
+
+//    private void showPrice()
+//    {
+//        Console.WriteLine(this.price);
+//    }
+//    public void callShowPrice()
+//    {
+//        this.showPrice();
+//    }
+//}
+
+//public class Gadgets : Products
+//{
+//    public string category;
+
+//    public Gadgets(int price, string name, string description, string category) : base (price, name, description)
+//    {
+//      this.category=category;
+//    }
+
+//    public void ShowGadget()
+//    {
+//        Console.WriteLine(this.name);
+//        this.callShowPrice();
+//        Console.WriteLine(this.description);
+//        Console.WriteLine(this.category);
+
+//    }
+//}  
+
+//Delegates
+//Math
+//Math.Cos()
+
+//Normal Delegate
+//MyMaths.MyMathsDelegate Eval = new MyMaths.MyMathsDelegate(MyMaths.Add);
+//Eval(4, 8);
+
+//Multicast Delegate
+
+//MyMaths.MyMathsDelegate MultiEval;
+// MultiEval = MyMaths.Mul;
+//MultiEval(2, 5);
+
+//MultiEval = MyMaths.Div;
+//MultiEval(2, 0);
+
+//MultiEval = MyMaths.Sub;
+//MultiEval(2, 0);
+
+//MyMaths.Sub(4, 2);
+//public class MyMaths
+//{
+//    public delegate void MyMathsDelegate(double num1, double num2);
+
+//    public static void Add(double a, double b)
+//    {
+//        Console.WriteLine(a + b);
+//    }
+//    public static void Sub(double a, int b)
+//    {
+//        Console.WriteLine(a - b);
+//    }
+
+//    public static void Mul(double a, double b)
+//    {
+//        Console.WriteLine(a * b);
+//    }
+//    public static void Div(double a, double b)
+//    {
+//        if(b!=0)
+//        Console.WriteLine(a / b);
+//        else
+//        Console.WriteLine("Can't divide by zero");
+//    }
+//}
+
+
+//Shopping.GetItem buy;
+//buy = Shopping.GetEatables;
+//buy("Jam", 550, "Black current jam with great delight");
+
+//public class Shopping
+//{
+//    public delegate void GetItem(string name, int price, string description);
+
+//    public static void GetEatables(string name, int price, string desc)
+//    {
+//        Console.WriteLine("You have bought eatable {0} at Rs. {1} . {2} .",name , price, desc);//placeholders
+//    } 
+//    public static void GetGadgets(string name, int price, string desc)
+//    {
+//        Console.WriteLine("You have bought gaddet {0} at Rs. {1} . {2} .",name , price, desc);//placeholders
+//    }
+
+
+//}
+
+//unary operator    a++, a--
+//binary operator   a + b; a - b
+//Ternary operator  (condition) ? "hi" : "bye" // 3 operands
+
+//string greet = (10 < 10) ? "hi" : "bye";
+
+//Console.WriteLine(greet);
