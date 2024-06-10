@@ -22,7 +22,7 @@
         <Label x:Name="label_Copy3" Content="City" HorizontalAlignment="Left" Margin="27,245,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="city" HorizontalAlignment="Left" Margin="74,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
 
-        <Button x:Name="button_Copy" Content="Update" HorizontalAlignment="Left" Height="31" Margin="42,376,0,0" VerticalAlignment="Top" Width="250" Background="#FF219C08" Foreground="White" FontSize="16" FontFamily="Adobe Heiti Std R" FontWeight="Bold" Grid.Column="1"/>
+        <Button x:Name="button_Copy" Content="Update" HorizontalAlignment="Left" Height="31" Margin="42,376,0,0" VerticalAlignment="Top" Width="250" Background="#FF219C08" Foreground="White" FontSize="16" FontFamily="Adobe Heiti Std R" FontWeight="Bold" Grid.Column="1" Click="UpdStd"/>
         <Button x:Name="button_Copy1" Content="Delete" HorizontalAlignment="Left" Height="31" Margin="309,378,0,0" VerticalAlignment="Top" Width="231" Background="#FFFF0707" Foreground="White" FontSize="16" FontFamily="Adobe Heiti Std R" FontWeight="Bold" Grid.Column="1" Click="deleteStud" />
         <Button x:Name="button_Copy2" Content="Insert" HorizontalAlignment="Left" Height="31" Margin="27,303,0,0" VerticalAlignment="Top" Width="194" Background="#FF0C9CE8" Foreground="White" FontSize="16" FontFamily="Adobe Heiti Std R" FontWeight="Bold"  Click="addStudent"/>
         <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Height="31" Margin="27,359,0,0" VerticalAlignment="Top" Width="194" Background="#FFFFD50D" Foreground="White" FontSize="16" FontFamily="Adobe Heiti Std R" FontWeight="Bold" Click="Clear_Click"/>
@@ -31,7 +31,7 @@
         <Label x:Name="label_Copy4" Content="Student Id" HorizontalAlignment="Left" Margin="43,336,0,0" VerticalAlignment="Top" Grid.Column="1" Width="76" FontSize="14" FontWeight="SemiBold"/>
         <TextBox x:Name="sid" HorizontalAlignment="Left" Margin="120,341,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Grid.Column="1"/>
         <DataGrid x:Name="studentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="33,91,27,166" Grid.Column="1"/>
-        <Button x:Name="button" Grid.Column="1" Content="Fetch Details" HorizontalAlignment="Left" Margin="255,341,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.34,0.179" Background="#FF9D00A5" Foreground="White"  FontSize="10" Height="18" Width="73"/>
+        <Button x:Name="button" Grid.Column="1" Content="Fetch Details" HorizontalAlignment="Left" Margin="255,341,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.34,0.179" Background="#FF9D00A5" Foreground="White"  FontSize="10" Height="22" Width="73" Click="getStdDetails"/>
 
     </Grid>
 </Window>
